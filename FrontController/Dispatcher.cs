@@ -1,0 +1,28 @@
+﻿using System;
+
+namespace FrontController
+{
+    public class Dispatcher
+    {
+        private StudentView studentView;
+        private HomeView homeView;
+
+        public Dispatcher()
+        {
+            studentView = new StudentView();
+            homeView = new HomeView();
+        }
+
+        public void dispatch(String request)
+        {
+            if (request.Equals("STUDENT"))
+            {
+                studentView.show();
+            }
+            else
+            {
+                homeView.show();
+            }
+        }
+    }
+}
