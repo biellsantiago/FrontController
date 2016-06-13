@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aaa.cs" />
     <Compile Include="Dispatcher.cs" />
     <Compile Include="FrontController.cs" />
     <Compile Include="HomeView.cs" />
